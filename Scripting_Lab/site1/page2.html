@@ -8,6 +8,14 @@
 </head>
 
 <body>
+  <script>
+    cols = ["#9de3af","#9de3d4","#e3cd9d","#f5ebd5","#b7cce8", "#ffffff"];
+    var i = 0;
+    function changeColor(){
+      document.body.style.backgroundColor = cols[i];
+      i = (i+1) % cols.length;
+    }
+  </script>
   <div>
 
     <img src="https://image.freepik.com/free-vector/coffee-go-art-composition_1284-35973.jpg" alt="cofe" style="float: left;max-width: 130px;">
@@ -94,7 +102,7 @@
   <input type="number" id="num" name="num">
 </form>
     <br>
-    <button type="button">Reserve</button>
+    <button type="button" onclick="changeColor()">Reserve</button>
 </body>
 
 </html>
